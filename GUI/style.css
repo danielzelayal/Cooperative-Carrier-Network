@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mdc-top-app-bar {
+    background-color: #2196F3; /* Google Blue */
+    color: white;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.mdc-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.map-card {
+    flex: 2;
+    min-width: 600px;
+    max-width: 800px;
+}
+
+.control-card {
+    flex: 1;
+    min-width: 350px;
+    max-width: 450px;
+}
+
+#mapCanvas {
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin-top: 16px;
+    border-radius: 4px;
+}
+
+.warehouse-input-wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#nodeList {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.mdc-list-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mdc-list-item:hover {
+    background-color: #f5f5f5;
+}
+
+.submit-button {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #03A9F4; /* Light Blue */
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-card, .control-card {
+        min-width: unset;
+        max-width: 90%;
+        width: 100%;
+    }
+}
+
+.map-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.mdc-icon-button {
+    color: #424242;
+}
+
+.map-card {
+    position: relative;
+}

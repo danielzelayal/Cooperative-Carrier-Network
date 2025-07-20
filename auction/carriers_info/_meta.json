@@ -1,0 +1,16 @@
+{
+  "ticks": 20,
+  "profit_before_total": 4546.6,
+  "profit_after_total": 5485.0,
+  "profit_before": {
+    "C0": 1141.4,
+    "C1": 1570.4,
+    "C2": 1834.8
+  },
+  "profit_after": {
+    "C0": 1512.4,
+    "C1": 1618.4,
+    "C2": 2354.2
+  },
+  "finished": true
+}

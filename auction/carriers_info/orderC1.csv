@@ -1,0 +1,6 @@
+Order ID(pk),pickup,delivery
+O06,N14,N21
+O07,N06,N12
+O08,N11,N01
+O09,N27,N05
+O10,N30,N07

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routing Panel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+        <div class="mdc-top-app-bar__row">
+            <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                <span class="mdc-top-app-bar__title">Manage</span>
+            </section>
+        </div>
+    </header>
+
+    <main class="mdc-top-app-bar--fixed-adjust">
+        <div class="container">
+            <div class="mdc-card map-card">
+                <h2 class="mdc-typography mdc-typography--headline6">Map</h2>
+                <div class="map-controls">
+                    <button id="zoomInBtn" class="mdc-icon-button material-icons">zoom_in</button>
+                    <button id="zoomOutBtn" class="mdc-icon-button material-icons">zoom_out</button>
+                    <button id="resetViewBtn" class="mdc-icon-button material-icons">center_focus_strong</button>
+                </div>
+                <canvas id="mapCanvas" width="800" height="600" style="border: 1px solid #ccc; background-color: #f5f5f5;"></canvas>
+            </div>
+
+            <div class="mdc-card control-card">
+
+                <h2 class="mdc-typography mdc-typography--headline6">Setting</h2>
+
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label warehouse-input-wrapper">
+                    <input type="text" id="warehouseLocation" class="mdc-text-field__input" placeholder="Enter the coordination of warehouse (ex: 10,20)">
+                    <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                    </div>
+                </div>
+
+                <h3 class="mdc-typography mdc-typography--subtitle1">Visible carriers</h3>
+                <div id="carrierFilters">
+                    <label class="mdc-typography--body2">
+                        <input type="checkbox" data-carrier="C0" checked> C0
+                    </label>
+                    <label class="mdc-typography--body2" style="margin-left: 12px;">
+                        <input type="checkbox" data-carrier="C1" checked> C1
+                    </label>
+                    <label class="mdc-typography--body2" style="margin-left: 12px;">
+                        <input type="checkbox" data-carrier="C2" checked> C2
+                    </label>
+                </div>
+
+                <h3 class="mdc-typography mdc-typography--subtitle1">All Available Nodes</h3>
+                <div id="nodeList" class="mdc-list mdc-list--two-line mdc-list--dense">
+                    </div>
+
+                <button class="mdc-button mdc-button--raised submit-button">
+                    <span class="mdc-button__label">Simulate Best Route</span>
+                </button>
+                <button class="mdc-button mdc-button--raised submit-button" id="runAuctionBtn">
+                    <span class="mdc-button__label">Show Auction Result</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <script type="module" src="script/dataManager.js"></script>
+    <script type="module" src="script/mapRenderer.js"></script>
+    <script type="module" src="script/uiHandlers.js"></script>
+    <script type="module" src="script/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</body>
+</html>
