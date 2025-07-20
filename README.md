@@ -3,9 +3,12 @@ This project simulates carrier agents using an auction system (Vickrey) to excha
 
 ## Author
 [Daniel Zelaya](https://github.com/danielzelayal)
-![GitHub stars](https://img.shields.io/github/stars/danielzelayal/Collaborative-Carriers-Network.svg)
+![Static Badge](https://img.shields.io/badge/status%3A-in_development-blue)
+![GitHub stars](https://img.shields.io/github/stars/danielzelayal/Cooperative-Carriers-Network?style=social)
+![GitHub forks](https://img.shields.io/github/forks/danielzelayal/Cooperative-Carriers-Network?style=social)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)
 
 ## Structure 
 ```
