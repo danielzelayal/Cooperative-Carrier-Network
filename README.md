@@ -98,6 +98,4 @@ python3 server_for_GUI.py
 - **Cost model:** customizable per agent (a1, a2, b1, b2 parameters)
 - **GUI integration ready:** all output structured for front-end use *ready?
 
-## Author
-[Daniel Zelaya](https://github.com/danielzelayal)
 
