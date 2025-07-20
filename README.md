@@ -11,7 +11,7 @@ This project simulates carrier agents using an auction system (Vickrey) to excha
 
 ## Structure 
 ```
-group06/
+Cooperative-Carrier-Network/
 ├── auction/
 │   ├── run.py               # Main simulation runner
 │   ├── agents.py            # Carrier and Auctioneer agents
