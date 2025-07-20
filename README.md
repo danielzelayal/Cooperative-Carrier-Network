@@ -1,6 +1,9 @@
 # Collaborative Carrier Networks
 This project simulates carrier agents using an auction system (Vickrey) to exchange delivery tasks (nodes) based on profit and cost modeling. It uses Mesa for agent-based simulation and OR-Tools for route optimization. Agents interact through an HTTP auction service implemented with FastAPI.
 
+## Author
+[Daniel Zelaya](https://github.com/danielzelayal)
+
 ```
 group06/
 ├── auction/
@@ -89,4 +92,6 @@ python3 server_for_GUI.py
 - **Cost model:** customizable per agent (a1, a2, b1, b2 parameters)
 - **GUI integration ready:** all output structured for front-end use *ready?
 
+## Author
+[Daniel Zelaya](https://github.com/danielzelayal)
 
